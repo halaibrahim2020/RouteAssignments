@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/main.css"> 
+    </head>
+    <body>
+        <div class="container m-4">
+            <div class="form-floating mb-3">
+                <input type="text" onclick="validationProduct(this)" class="form-control" id="productName" placeholder="Product Name">
+                <div class="d-none alert alert-danger">Product Must be 3-5 char first letter is Capital</div>
+                <label for="productName">Product Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" onclick="validationProduct(this)" class="form-control" id="productPrice" placeholder="Product Price">
+                <div class="d-none alert alert-danger">Product Must be 3-5 char first letter is Capital</div>
+                <label for="productPrice">Product Price</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" onclick="validationProduct(this)" class="form-control" id="productDesc" placeholder="Product Description">
+                <div class="d-none alert alert-danger">Product Must be 3-5 char first letter is Capital</div>
+                <label for="productDesc">Product Description</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input list = "dataCat" onclick="validationProduct(this)" type="text" class="form-control" id="productCat" placeholder="Product Category">
+                <div class="d-none alert alert-danger">Product Must be 3-5 char first letter is Capital</div>
+                <datalist id="dataCat">
+                    <option value="TV">
+                    <option value="Mobile">
+                    <option value="Sports">
+                    <option value="Music">
+                    <option value="Reading">
+                    
+                </datalist>
+                <label for="productCat" class="form-control">Product Category</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="file" class="form-control" id="productImage" placeholder="Product Image" />
+            </div>
+            <div class="container m-auto d-flex justify-content-center">
+                <button class="btn btn-danger m-3" id="addProduct">Add Product</button>
+                <button class="btn btn-danger m-3" id="updateProduct">Update</button>
+            </div>
+            <div class="row d-flex" >
+                <input type="text" class="m-3 w-50 m-auto text-center" placeholder="Search by Product Name" id="searchProduct">
+            </div>
+            
+          
+        </div>
+        <div class="container ">
+            <div class="row d-flex" id="divDisplayProducts">
+                 <!-- <div class="col-md-3 bg-info text-center">
+                    <img src="Images/1.jpeg" class="w-25" alt=""/>
+                    <h2>1000</h2>
+                    <h2>Good</h2>
+                    <h2>TV</h2>
+
+
+                    <button class="btn">                        
+                        <i class="fa fa-trash text-danger text-center"></i>
+                    </button>
+                    <button class="btn">
+                        <i class="fa fa-edit fs-5 bg-warning"></i>
+                    </button>
+                </div>  
+                -->
+            </div> 
+
+        </div>
+
+        <script src="js/all.min.js"></script>
+        <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+        <script src="js/index.js"></script>
+    </body>
+</html>

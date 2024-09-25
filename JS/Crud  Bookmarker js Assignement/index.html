@@ -1,0 +1,117 @@
+<html>
+    <head>
+
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="css/all.min.css"> 
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <main class="interface py-5 position-relative container">
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <h1>Bookmarker</h1>
+            </div>
+
+
+            <div class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name w-100 d-flex flex-column justify-content-center">
+                    <label class="pb-2 fw-semibold" for="bookmarkName">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                            Site Name
+                    </label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName"> 
+                    <div class="alert alert-danger d-none" role="alert">
+                       SiteName must be 3 to 10 characters.
+                      </div>
+                         
+                </div>
+                <div class="site-url w-100 d-flex flex-column justify-content-center">
+                    <label class="pb-2 fw-semibold" for="bookmarkURL">
+                        <i class="fa-solid fa-link pe-2"></i>
+                        Site URL
+                    </label>
+                    <input id="bookmarkURL" class="form-control" type="url" placeholder="Website URL">
+                    <div class="alert alert-danger d-none" role="alert">
+                        You Must Write Right Site Name.
+                    </div>
+                </div>
+                <button id="submitBtn" class="btn btn-submit px-5""">Submit</button>
+                <input type="text" class="form-control m-auto w-50" placeholder="Search By Site Name" id="searchSiteName"/>
+               
+            </div>
+
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <th class="text-capitalize">index</th>
+                    <th class="text-capitalize">Website Name</th>
+                    <th class="text-capitalize">visit</th>
+                    <th class="text-capitalize">Delete</th>  
+                    <th class="text-capitalize">Update</th>  
+                </thead>
+                <tbody id="tableContent">
+                        <!-- <tr>
+                            <td>1</td>
+                            <th>masrawy</td>
+                            <td><a href="www.marasaway.com">masrawy</a></td>
+                            <td> <button class="btn text-danger text-center fs-5 " >
+                                <i class="fa fa-trash"></i>
+                            </button></td>
+                             <button class="btn" id='editBtn'>
+                                <i class="fa fa-edit fs-5 text-warning"></i>
+                            </button>
+                        </tr> -->
+                </tbody>
+            </table>
+        </main>
+
+                    <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button> -->
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Update BookMark</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    
+                        <div class="mb-3">
+                            <!-- <label for="formGroupExampleInput" class="form-label">BookMark Name </label> -->
+                            <input type="text" class="form-control" id="bookMarkNameInput" placeholder="BookMark Name">
+                          </div>
+                          <div class="mb-3">
+                            <!-- <label for="formGroupExampleInput2" class="form-label">Another label</label> -->
+                            <input type="text" class="form-control" id="bookMarkURLInput" placeholder="BookMark URL">
+                          </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" id="updateBookMarkBtn">Update</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- ============== end model==== -->
+      
+        
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
+

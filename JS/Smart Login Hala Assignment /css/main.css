@@ -1,0 +1,22 @@
+body{
+    font-weight: 400;
+    background-color: #24353f;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.group{
+    border:2px solid #24353f;
+    box-shadow:-5px 2px 54px -9px rgba(0, 0, 0, 1)
+}
+
+h1{
+    color:#17a2b8;
+    font-size: 2.5rem;
+}

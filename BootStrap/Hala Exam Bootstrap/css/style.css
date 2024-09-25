@@ -1,0 +1,889 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../Fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+
+
+:root{
+  --main-color-white:white;
+  --seconday-color-black:black;
+  --third-color-gray:#748182;
+  --mid-gray-color:#f4f4f4;
+  --fourth-coor-gray:#f7f7f7;
+  --main-font:poppins;
+  --seconday-font:Montserrat;
+  
+}
+body{
+  /* background-color: aqua; */
+  font-family: var(--main-font);
+
+}
+header{
+  background-image: url(../Images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .navbar .nav-item  .home-link{
+  position: relative;
+}
+header .navbar .nav-item  .home-link::after{
+  content: "";
+  position: absolute;
+  height:3px;
+  width:80%;
+  bottom:4px;
+  left:5px;
+  background-color:var(--main-color-white);
+  /* text-decoration: underline; */
+}
+header h5{
+font-weight: 600;
+font-size:60px;
+line-height:1.1;
+width:100%;
+}
+header h1 span{
+  line-height:1.1;
+  font-weight: 500;
+  font-family: var(--seconday-font);
+  font-size:40px;
+  position: relative;
+  /* background-color: aquamarine; */
+  /* width:100%; */
+  padding-left:40%;
+}
+
+header .content h1::after{
+  content: "";
+  position:absolute;
+  left:56%;
+  transform: translate(-50%,-50%);
+  top:46%;
+  font-size:40px;
+  
+  /* width:%;
+  height:5px; */
+  /* background-color: blue; */
+  color:var(--main-color-white);
+  font-weight: 500;
+  animation: type 20s infinite;;
+  /* padding-left: 5px; */
+  /* padding-left:50px; */
+}
+
+@keyframes type {
+  0% {
+    content: "  |";
+  }
+  1% {
+    content: "  D |";
+  }
+  2% {
+    content: "  De |";
+  }
+  3% {
+    content: "  Dev |";
+  }
+  4% {
+    content: "  Deve |";
+  }
+  5% {
+    content: "  Devel |";
+  }
+  6% {
+    content: "  Develo |";
+  }
+  7% {
+    content: "  Develop |";
+  }
+  8% {
+    content: " Develope |";
+  }
+  9% {
+    content: " Develope |";
+  }
+  10% {
+    content: " Developer |";
+  }
+  10% {
+    content: "  |";
+  }
+  12% {
+    content: " D |";
+  }
+  13% {
+    content: " De |";
+  }
+  14% {
+    content: " Des |";
+  }
+  15% {
+    content: " Desg |";
+  }
+  16% {
+    content: " Desgi |";
+  }
+  17% {
+    content: " Desgin |";
+  }
+  18% {
+    content: " Desgine |";
+  }
+  19% {
+    content: "Desginer |";
+  }
+  20% {
+    content: "  |";
+  }
+  21% {
+    content: " L |";
+  }
+  22% {
+    content: " la |";
+  }
+  23% {
+    content: " Lar |";
+  }
+  24% {
+    content: " Larr |";
+  }
+  25% {
+    content: " Larry |";
+  }
+  26% {
+    content: " Larry |";
+  }
+  27% {
+    content: " Larry D |";
+  }
+  28% {
+    content: " Larry Da |";
+  }
+  29% {
+    content: " Larry Dan |";
+  }
+  30% {
+    content: " Larry Dani |";
+  }
+  30% {
+    content: " Larry Danie |";
+  }
+  31% {
+    content: " Larry Daniel |";
+  }
+  32% {
+    content: " Larry Daniels |";
+  }
+  33% {
+    content: "  |";
+  }
+  35% {
+    content: " D |";
+  }
+  36% {
+    content: " De |";
+  }
+  37% {
+    content: " De |";
+  }
+  38% {
+    content: " Des |";
+  }
+  39% {
+    content: " Desg |";
+  }
+  40% {
+    content: " Desgi |";
+  }
+  41% {
+    content: " Desgin |";
+  }
+  42% {
+    content: " Desgine |";
+  }
+  43% {
+    content: "Desginer |";
+  }
+  44% {
+    content: "  |";
+  }
+  21% {
+    content: " L |";
+  }
+  45% {
+    content: " la |";
+  }
+  46% {
+    content: " Lar |";
+  }
+  47% {
+    content: " Larr |";
+  }
+  48% {
+    content: " Larry |";
+  }
+  49% {
+    content: " Larry |";
+  }
+  50% {
+    content: " Larry D |";
+  }
+  51% {
+    content: " Larry Da |";
+  }
+  52% {
+    content: " Larry Dan |";
+  }
+  53% {
+    content: " Larry Dani |";
+  }
+  54% {
+    content: " Larry Danie |";
+  }
+  55% {
+    content: " Larry Daniel |";
+  }
+  56% {
+    content: " Larry Daniels |";
+  }
+  57% {
+    content: "  |";
+  }
+  58% {
+    content: " D |";
+  }
+  59% {
+    content: " De |";
+  }
+  60% {
+    content: " De |";
+  }
+  61% {
+    content: " Des |";
+  }
+  62% {
+    content: " Desg |";
+  }
+  63% {
+    content: " Desgi |";
+  }
+  64% {
+    content: " Desgin |";
+  }
+  65% {
+    content: " Desgine |";
+  }
+  66% {
+    content: "Desginer |";
+  }
+  67% {
+    content: "  |";
+  }
+  68% {
+    content: " L |";
+  }
+  69% {
+    content: " la |";
+  }
+  70% {
+    content: " Lar |";
+  }
+  71% {
+    content: " Larr |";
+  }
+  72% {
+    content: " Larry |";
+  }
+  73% {
+    content: " Larry |";
+  }
+  74% {
+    content: " Larry D |";
+  }
+  75% {
+    content: " Larry Da |";
+  }
+  76% {
+    content: " Larry Dan |";
+  }
+  77% {
+    content: " Larry Dani |";
+  }
+  78% {
+    content: " Larry Danie |";
+  }
+  79% {
+    content: " Larry Daniel |";
+  }
+  80% {
+    content: " Larry Daniels |";
+  }
+  81% {
+    content: "  |";
+  }
+  82% {
+    content: " D |";
+  }
+  83% {
+    content: " De |";
+  }
+  84% {
+    content: " De |";
+  }
+  85% {
+    content: " Des |";
+  }
+  86% {
+    content: " Desg |";
+  }
+  87% {
+    content: " Desgi |";
+  }
+  88% {
+    content: " Desgin |";
+  }
+  89% {
+    content: " Desgine |";
+  }
+  90% {
+    content: "Desginer |";
+  }
+  91% {
+    content: "  |";
+  }
+  92% {
+    content: " Larr |";
+  }
+  93% {
+    content: " Larry  |";
+  }
+  94% {
+    content: " Larry Da |";
+  }
+  96% {
+    content: " Larry Dan |";
+  }
+  97% {
+    content: " Larry Dani |";
+  }
+  98% {
+    content: " Larry Danie |";
+  }
+  99% {
+    content: " Larry Daniel |";
+  }
+  100% {
+    content: " Larry Daniels |";
+  }
+
+}
+
+
+header .social_icons li{
+  list-style: none;
+  font-size: 20px;
+
+}
+
+/* ======= About section =================== */
+#about {
+  background-color: var(--main-color-white);
+  font-family: var(--seconday-font);
+  text-transform: capitalize;
+}
+h3{
+position: relative;
+}
+h3::after{
+content:"";
+position: absolute;
+height:8px;
+width:8px;
+transform:translate(-50%,-50%);
+border-radius: 50%;
+left:108%;
+top:50%;
+/* color:red; */
+background-color: var(--seconday-color-black);
+}
+
+#about span{
+  /* color:#999; */
+  /* color:blue; */
+}
+#about p {
+color:var(--third-color-gray);
+line-height:1.6;
+ }
+
+ .span-about {
+  color:var(--third-color-gray);
+ }
+
+}
+#about .progress-bar .porgress-label{
+  display: flex !important;
+  justify-content: space-around !important;
+  /* align-items:flex-start !important; */
+
+}
+
+#about  .about-btns button{
+padding-inline: 20px;
+margin-inline:2px;
+}
+/* ======= End About section ================ */
+
+/* ===== Sevice Section ============= */
+#services{
+  /* background-color: var(--third-color-gray); */
+  background-color:var(--fourth-coor-gray);
+  background-color: #f7f7f7;
+}
+ h3{
+  position: relative;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: var(--seconday-font);
+  background-color: var(--fourth-coor-gray);
+  text-align:center;
+  }
+#services  h3::after{
+  content:"";
+  position: absolute;
+  height:8px;
+  width:8px;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+  left:58%;
+  top:63%;
+  /* color:red; */
+  /* background-color: var(--thi); */
+
+  }
+  /* #services  .icon-info {
+    transition: all 1s;
+  } */
+  #services  .icon {
+    background-color:#f7f7f7;
+    padding:5%;
+    margin:5%;
+    /* color:blue; */
+    font-size:25px;
+    border-radius: 50%;
+    border:1px solid #f7f7f7;
+    transition: all 1s;
+  }
+
+  #services  .icon:hover {
+background-color: black;
+color:white;
+
+}
+
+#services  p{
+color:var(--third-color-gray);
+line-height:1.6;
+word-spacing:2px;
+max-width: 200;
+}
+/* ============End Service Section====== */
+
+/* ========= Portfolio ================ */
+#Portfolio{
+  /* background-color: var(--third-color-gray); */
+  background-color:white;
+}
+#Portfolio  h3::after{
+  content:"";
+  position: absolute;
+  height:8px;
+  width:8px;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+  left:58%;
+  top:63%;
+  /* color:red; */
+  /* background-color: var(--thi); */
+
+  }
+
+  #portfolio .item {
+    overflow: hidden;
+  }
+ 
+  #portfolio .layer {
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* position-absolute h-100 top-0 start-50   d-flex flex-column justify-content-center align-items-center */
+
+  }
+  
+    #portfolio .item:hover .layer {
+      opacity: 1;
+    }
+    
+  
+  #portfolio .item img {
+    transition: all 0.5s;
+    opacity: 1;
+  }
+  #portfolio .item:hover img {
+    transform: scale(1.2);
+    opacity:0;
+  }
+
+
+  #portfolio .item:hover .item-img {
+    opacity: 1;
+    border:7px solid #bbb9b9;
+    border-radius: 2px;
+    background-color: white;
+  }
+
+  /* #portfolio .item .layer_content {
+    transition: all 0.5s;
+  
+    top: 50%;
+    left:50%;
+    opacity: 1;
+
+  } */
+  
+  #portfolio .item:hover .layer_content {
+    /* top:50%; 
+    left:50%;
+    transform: translate(-50%,-50%); */
+    /* opacity: 1; */
+  }
+  
+  #portfolio .item .layer .layer_content .item-icons .icon{
+    border:1px solid black;
+    padding:7px;
+    color: #eee;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 1s;
+    
+
+  }
+
+  #portfolio .item .layer .layer_content .item-icons .icon:hover{ 
+    color: black;
+    background-color: #eee;
+    transform: scale(1.2);
+
+  }
+
+  #portfolio .nav .nav-item .nav-link{
+    color:black;
+    text-decoration: none;
+    
+  }
+  
+  #portfolio .nav .nav-item .active{
+    background-color: transparent;
+    color:black;
+    text-decoration: underline;
+  }
+/* ========= End Portfolio ============ */
+
+
+/* ========= Testimonials ============ */
+#testimonials{
+  /* background-color: var(--third-color-gray); */
+  background-color:#f7f7f7;
+}
+ h3{
+  position: relative;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: var(--seconday-font);
+  background-color: var(--fourth-coor-gray);
+  text-align:center;
+  }
+#testimonials  h3::after{
+  content:"";
+  position: absolute;
+  height:8px;
+  width:8px;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+  left:56%;
+  top:63%;
+  /* color:red; */
+  /* background-color: var(--thi); */
+
+  }
+
+  #testimonials .carousel-inner img{
+    width:150px;
+    height:150px;
+    background-color: var(--third-color-gray);
+
+  }
+  #testimonials .carousel-inner p{
+  color:var(--third-color-gray);
+  line-height:1.6;
+  font-size: 15px;
+  max-width: 950;
+  }
+
+  #testimonials .carousel-inner h6{
+    font-family:var(--seconday-font);
+    font-size: 16px;
+    font-weight: 600;
+    margin:30px 0 5px;
+
+  }
+  #testimonials .carousel-inner span{
+    font-size: 12px;
+    font-weight: 600;
+    color:#888;
+    margin-bottom: 30px;
+  }
+
+  #testimonials .carousel-indicators .indicator { 
+    background-color: var(--third-color-gray);
+    border-radius: 50% !important ;
+    width:10px;
+    height:10px;
+    /* margin-block: 3px; */
+    margin-inline: 4px;
+
+
+  }
+/* ========= End Testimonials ============ */
+
+
+
+/* ============ counter ============ */
+#counter{
+  background-color:var(--main-color-white);
+}
+
+#counter .counter-items h4{ 
+  font-weight: 900;
+  font-size:30px;
+  margin-bottom: 15px;
+  font-family: var(--seconday-font);
+  margin-block: 20px;
+}
+#counter .counter-items p{
+  color:#c71559;
+font-weight: 600;
+font-size:5p;
+margin-bottom:40px;
+margin-top: 30px;
+
+}
+
+/* ============ End Counter ========= */
+
+
+/* ==== our team ============ */
+#our-team{
+  /* background-color: var(--third-color-gray); */
+  background-color: #f7f7f7;
+
+;
+}
+#our-team h3{
+position: relative;
+}
+  
+  
+ 
+#our-team  h3::after{
+  content:"";
+  position: absolute;
+  height:8px;
+  width:8px;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+  left:60%;
+  top:63%;
+  /* color:red; */
+  /* background-color: var(--thi); */
+
+  }
+
+  #our-team  .card-footer {
+    background-color: #595959;
+    color:white;
+    border:2px solid #595959;
+    
+  }
+
+  #our-team .inner {
+    overflow: hidden;
+  }
+  
+  #our-team .layer {
+    opacity: 0;
+    background-color: rgba(245, 240, 240, 0.9);
+    width:98%;
+    height:98%;
+    top: 1%;
+    left:1%;
+
+    transition: all 0.5s;
+  }
+  #our-team .inner:hover .layer { 
+    opacity: 1;
+    transform: rotate(360deg);
+    /* transform: scale(0.5) ; */
+    scale: (0.5);
+  }
+
+  #our-team .inner img {
+    transition: all 0.5s
+  }
+
+  
+  #our-team .inner:hover img { 
+    transform: scale(1.2);
+
+  }
+  #our-team .inner  ul{ 
+    list-style: none;
+    font-size:20px;
+ 
+  }
+
+  #our-team .inner  ul li { 
+    padding:10px;
+    border-radius: 50%; 
+    font-size: 25px;
+    padding:20px; 
+    border:1px solid black;
+    color: #eee;
+    background-color: black;
+    width:50px;
+    height:50px;
+    text-align: center;
+    transition: all 1s;
+    
+  }
+
+  #our-team .inner  ul li.icon{
+    transition: all 1s;
+  }
+
+  
+
+  #our-team .inner  ul li:hover .icon{ 
+    color:black;
+   
+  }
+
+  #our-team .inner  ul li:hover { 
+    background-color: white;
+  }
+  #our-team .card-footer h5 {
+    font-family:var(--seconday-font);
+    font-weight:700;
+    text-transform: uppercase;
+    font-size: 18px;
+    /* color:blue; */
+  }
+  
+/* ====End Our Team ========== */
+/* =========== Contact us ========== */
+#contact-us h3{
+  position: relative;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: var(--seconday-font);
+  background-color: var(--fourth-coor-gray);
+  text-align:center;
+  }
+#contact-us  h3::after{
+  content:"";
+  position: absolute;
+  height:8px;
+  width:8px;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+  left: 56%;
+  top:63%;
+  /* color:red; */
+  /* background-color: var(--thi); */
+
+  }
+.contact-icon .icon{
+  background-color:var(--mid-gray-color);
+  border:2 solid var(--mid-gray-color);
+  margin-bottom: 20px;
+  transition: all 0.5s;
+
+}
+.contact-icon .icon:hover{
+  background-color:black;
+  color:white;
+}
+#contact-us p{
+  /* max-width: 200; */
+  font-size: 16px;
+}
+#contact-us input {
+  background-color: var(--mid-gray-color);
+  padding:15px;
+  margin:2%;
+}
+
+#contact-us textarea {
+  background-color: var(--mid-gray-color);
+  left:-2%;
+  padding:15px;
+  margin:1%;
+
+}
+#contact-us button{
+  width:100px;
+  bottom: -25%;
+  margin-top: 2%;
+  margin-left: 2%;
+  padding-block:10px;
+  padding-inline: 11px;
+}
+
+footer{
+  height:8%;
+}
+
+footer p{
+  font-size: 15px;
+  color:var(--third-color-gray);
+}
+/* ======= End Contact Us ========== */
+/*  */
